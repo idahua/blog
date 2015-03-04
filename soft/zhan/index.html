@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+		<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+		<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1>淘宝客建站神器-使用文档</h1>
+				<p class="lead">淘宝客建站神器可以帮助淘客0基础<strong>一键建站</strong>，主要功能有<strong>自动采集</strong>、<strong>QQ群发</strong>、<strong>网页生成</strong>等功能。让淘客可以把精力集中在推广上。曾用名<del>淘客网站一键制作</del>，<del>一键建站</del>等。</p>
+			</div>
+
+			<h3>购买软件</h3>
+			<p class="lead">建站神器需要先联系A5光华<code>QQ：4872383</code>购买使用，当前价格
+				<button type="button" class="btn btn-info btn-sm">198</button>元。价格每月一日都会上涨10元。</p>
+
+			<h3>软件主界面预览</h3>
+			<img src="img/main.JPG" / class="img-responsive" alt="一键建站">
+
+			<h3>登录</h3>
+			<p class="lead"><code>登录>>登录阿里妈妈</code>设置阿里妈妈用户名,密码，完整的三段PID。类似<code>mm_56568_65633669_44444264</code>这样的一串pid，只需要在后台<strong>手动生成</strong>一个淘宝客推广链接就可以在链接里发现这串pid</p>
+
+			<h3>采集</h3>
+			<p class="lead"><code>采集>>配置</code>先进行采集图片设置，根据实际需要进行选择和设置截图延时。</p>
+			<p class="lead"><code>采集>>手动|优站</code>1、可以采集优站的淘宝单品ID（点击选中后右击），2、手动添加淘宝单品链接或淘宝ID进行采集，3、支持淘宝客链接还原成淘宝ID</p>
+			<p class="lead"><code>采集>>关键词采集</code>根据关键词采集相关数据，数据阿里妈妈后台搜索结果同步，需要先登录淘宝</p>
+
+			<h3>发布</h3>
+			<p class="lead"><code>发布>>QQ群发</code>模拟手工QQ群发，满足QQ群营销用户需要</p>
+
+			<h3>生成</h3>
+			<p class="lead"><code>生成>>生成模板</code>单页模板生成，供开发者使用，制作好单页模板导入。</p>
+			<p class="lead"><code>生成>>单页汇总</code>生成各种单页模板，已提供zhe800模板，移动单页模板,QQ空间日志模板，ZBLOG模板，邮件模板等。</p>
+			<p class="lead"><code>生成>>淘点金整站</code>创建一个淘点金类型的整站，可以自由设置淘宝ID。</p>
+			<p class="lead"><code>生成>>整站生成</code>创建促销型的淘客整站，如卷皮网等。</p>
+
+			<h3>小结</h3>
+			<blockquote>以上就是淘宝客建站神器的简单介绍了，具体使用过程在群共享里，本文档不保证及时更新，最新版本以群内通知为主，感谢支持。</blockquote>
+
+			<!--高速版，加载速度快，使用前需测试页面的兼容性-->
+			<div id="SOHUCS"></div>
+			<script>
+				(function(){
+				    var appid = 'cyrEC6N3o',
+				    conf = 'prod_4bc53170f00e39f7117daca12efdfad6';
+				    var doc = document,
+				    s = doc.createElement('script'),
+				    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+				    s.type = 'text/javascript';
+				    s.charset = 'utf-8';
+				    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+				    h.insertBefore(s,h.firstChild);
+				    window.SCS_NO_IFRAME = true;
+				  })()
+			</script>
+
+		</div>
+	</body>
+
+</html>
