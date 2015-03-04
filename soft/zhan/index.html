@@ -56,21 +56,30 @@
 			<!--高速版，加载速度快，使用前需测试页面的兼容性-->
 			<div id="SOHUCS"></div>
 			<script>
-				(function(){
-				    var appid = 'cyrEC6N3o',
-				    conf = 'prod_4bc53170f00e39f7117daca12efdfad6';
-				    var doc = document,
-				    s = doc.createElement('script'),
-				    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-				    s.type = 'text/javascript';
-				    s.charset = 'utf-8';
-				    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
-				    h.insertBefore(s,h.firstChild);
-				    window.SCS_NO_IFRAME = true;
-				  })()
+				(function() {
+					var appid = 'cyrEC6N3o',
+						conf = 'prod_4bc53170f00e39f7117daca12efdfad6';
+					var doc = document,
+						s = doc.createElement('script'),
+						h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+					s.type = 'text/javascript';
+					s.charset = 'utf-8';
+					s.src = 'http://assets.changyan.sohu.com/upload/changyan.js?conf=' + conf + '&appid=' + appid;
+					h.insertBefore(s, h.firstChild);
+					window.SCS_NO_IFRAME = true;
+				})()
 			</script>
 
 		</div>
+
+		<footer class="blog-footer">
+			<p>淘宝客建站神器
+				<script type="text/javascript">
+					var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+					document.write(unescape("%3Cspan id='cnzz_stat_icon_1253295314'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D1253295314' type='text/javascript'%3E%3C/script%3E"));
+				</script>
+			</p>
+		</footer>
 	</body>
 
 </html>
