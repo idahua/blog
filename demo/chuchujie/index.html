@@ -1,0 +1,567 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta name="renderer" content="webkit" />
+		<meta name="X-UA-Compatible" content="IE=edge" />
+		<title>9块9包邮购，9块9还包邮</title>
+		<meta name="keywords" content="9块9包邮购,9块9包邮,九块九包邮购,九块九包邮,9块9还包邮,九块九还包邮,每日精选,今日精选,独家折扣,导购,网购,购物,推荐,女装,内衣,文胸,女包,高跟鞋,时尚,精品,团购,特价,森女,小清新,搭配,卖萌,连衣裙,打底裤" />
+		<meta name="description" content="每日精选超值宝贝，低至9块9，6000万人的共同选择！" />
+		<link rel="stylesheet" type="text/css" href="http://www.chuchujie.com/css/public.css?v=20150130" />
+		<link rel="stylesheet" type="text/css" href="http://www.chuchujie.com/css/main.css?v=01301614" />
+		<link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+		<script type="text/javascript" src="http://libs.baidu.com/jquery/1.4.3/jquery.js"></script>
+		<script type="text/javascript" src="http://www.chuchujie.com/js/common.js?v=0228"></script>
+		<script type="text/javascript" src="http://www.chuchujie.com/js/lazyload.js"></script>
+
+		<!-----以下是横幅幻灯片js------->
+		<script type="text/javascript" src="http://www.chuchujie.com/js/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="http://www.chuchujie.com/js/jquery.touchSlider.js"></script>
+		<script type="text/javascript">
+			function is_mobile() {
+				var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+				var u = navigator.userAgent;
+				var result = regex_match.exec(u);
+				return !!result;
+			}
+			if (is_mobile()) {
+				
+			}
+			$(document).ready(function() {
+				$(".main_visual").hover(function() {
+					$("#btn_prev,#btn_next").fadeIn()
+				}, function() {
+					$("#btn_prev,#btn_next").fadeOut()
+				})
+				$dragBln = false;
+				$(".main_image").touchSlider({
+					flexible: true,
+					speed: 200,
+					btn_prev: $("#btn_prev"),
+					btn_next: $("#btn_next"),
+					paging: $(".flicking_con a"),
+					counter: function(e) {
+						$(".flicking_con a").removeClass("on").eq(e.current - 1).addClass("on");
+					}
+				});
+				$(".main_image").bind("mousedown", function() {
+					$dragBln = false;
+				})
+				$(".main_image").bind("dragstart", function() {
+					$dragBln = true;
+				})
+				$(".main_image a").click(function() {
+					if ($dragBln) {
+						return false;
+					}
+				})
+				timer = setInterval(function() {
+					$("#btn_next").click();
+				}, 5000);
+				$(".main_visual").hover(function() {
+					clearInterval(timer);
+				}, function() {
+					timer = setInterval(function() {
+						$("#btn_next").click();
+					}, 5000);
+				})
+				$(".main_image").bind("touchstart", function() {
+					clearInterval(timer);
+				}).bind("touchend", function() {
+					timer = setInterval(function() {
+						$("#btn_next").click();
+					}, 5000);
+				})
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="header">
+			<div class="h-container clearfix">
+				<div class="site_logo">
+					<a href="" title="">
+						<img src="http://www.chuchujie.com/images/logo.png" alt="" />
+					</a>
+				</div>
+				<ul class="site_icon">
+					<li class="bg4">9天无理由退货</li>
+					<li class="bg3">小编验货</li>
+					<li class="bg2">闪电发货</li>
+					<li class="bg1">担保交易</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="site_pannel">
+			<div class="nav-container">
+				<ul class="sp-container">
+					<li class="sp-active"><a href="">首页</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!---------------header end--------------->
+
+		<!---------横幅幻灯片 start------------->
+		<div class="container">
+			<div class="main_visual">
+				<div class="flicking_con">
+					<div class="flicking_inner">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+				<div class="main_image">
+					<ul>
+						<li>
+							<a href="zdm.html" title="" class="imgtitle" tj-type="轮播图2">
+								<span class="img_1"></span>
+							</a>
+						</li>
+						<li>
+							<a href="brand.html" title="" class="imgtitle" tj-type="轮播图2">
+								<span class="img_2"></span>
+							</a>
+						</li>
+					</ul>
+					<a href="javascript:;" id="btn_prev"></a>
+					<a href="javascript:;" id="btn_next"></a>
+				</div>
+			</div>
+		</div>
+		<!---------横幅幻灯片 start------------->
+
+		<div class="h-container clearfix">
+
+			<div class="mark-site nopd mt35 clearfix">
+				<i class="lock"></i><em class="ftpink">每日精品推荐</em> 今日更新
+			</div>
+
+			<!---------------宝贝list start--------------->
+			<div class="ba-baobei-box mt10 clearfix">
+				<div class="baobei-width clearfix">
+					<ul class="clearfix" id="baobeilist">
+				
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('19392340622.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i2/TB1hN4ZHXXXXXaoapXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i2/TB1hN4ZHXXXXXaoapXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">北极绒保暖内衣加厚加绒黄金甲女男士内衣套装中老年秋衣秋裤秋冬</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">39.91</span><span class="item-salesInfo-oprice">￥214</span><span class="item-salesInfo-discount"><em>1.8</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>年终抄底价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('40989442775.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB1ZPSlHXXXXXaiXVXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB1ZPSlHXXXXXaiXVXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">北极绒保暖内衣加厚加绒女男士内衣圆领秋衣秋裤情侣保暖套装秋冬</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">248.01</span><span class="item-salesInfo-oprice">￥385</span><span class="item-salesInfo-discount"><em>6.4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>马上涨价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('42460717355.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB12.bpGVXXXXcgXVXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB12.bpGVXXXXcgXVXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">维珍聚拢调整型磁疗文胸罩深V性感时尚内衣高档蕾丝刺绣[凤尾]</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">37.8</span><span class="item-salesInfo-oprice">￥150</span><span class="item-salesInfo-discount"><em>2.5</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>2件包邮</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('26123556815.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB1tLBWHXXXXXXpXXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB1tLBWHXXXXXXpXXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">南极人保暖内衣加厚加绒女男士双层中科黄金甲秋衣秋裤套装加大码</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">35.81</span><span class="item-salesInfo-oprice">￥198</span><span class="item-salesInfo-discount"><em>1.8</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>淘金币价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('40806582253.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i2/TB1E6MOGVXXXXXPXVXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i2/TB1E6MOGVXXXXXPXVXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">【4条礼盒装】南极人男士内裤男纯棉U凸内裤四角裤头内衣性感透气</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">26.9</span><span class="item-salesInfo-oprice">￥49</span><span class="item-salesInfo-discount"><em>5.4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>新年特惠价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('41784838448.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1gk6pGVXXXXXKaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1gk6pGVXXXXXKaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">特价男士保暖内衣基础保暖内衣加厚加绒秋冬棉毛衫秋衣秋裤套装</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">35.71</span><span class="item-salesInfo-oprice">￥176.1</span><span class="item-salesInfo-discount"><em>2</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>跳楼清仓</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('20059093045.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB1CLGzHXXXXXb9XpXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB1CLGzHXXXXXb9XpXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">阿诗玛男士保暖内衣套装男女冬中科黄金甲保暖衣加绒加厚秋衣秋裤</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">9.9</span><span class="item-salesInfo-oprice">￥89</span><span class="item-salesInfo-discount"><em>1.1</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>马上涨价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('43348417556.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1cpwXGpXXXXbWaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1cpwXGpXXXXbWaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">隐形文胸聚拢加厚小胸nubra new新娘胸贴婚纱无肩带内衣硅胶乳贴</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">39.91</span><span class="item-salesInfo-oprice">￥128</span><span class="item-salesInfo-discount"><em>3.1</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>限时十分钟</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('17281915816.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB13tAOGVXXXXcvXFXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB13tAOGVXXXXcvXFXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">【正品】性感小胸平胸加厚超厚女士内衣 冬 红胸罩聚拢调整型文胸</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">29.9</span><span class="item-salesInfo-oprice">￥110</span><span class="item-salesInfo-discount"><em>2.7</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>两件减五元</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('17012375651.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1GmaGGFXXXXb3aXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1GmaGGFXXXXb3aXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">女冬保暖背心加绒加厚贴身托胸美体塑身保暖上衣打底保暖内衣外穿</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">18.5</span><span class="item-salesInfo-oprice">￥185</span><span class="item-salesInfo-discount"><em>1</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>仅此一天</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('40757941008.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/19077030542372813/T16iI_FXhcXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/19077030542372813/T16iI_FXhcXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">赛芙蓉 内衣加厚超聚拢调整型收副乳性感女蕾丝文胸  工厂直销店</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">3.29</span><span class="item-salesInfo-oprice">￥3.3</span><span class="item-salesInfo-discount"><em>10</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍11块9</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('35133415779.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1JonHGXXXXXc0XXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1JonHGXXXXXc0XXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">依谷韩国加厚洗衣袋护洗袋细网袋内衣物防护套装包邮满就减</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">35.9</span><span class="item-salesInfo-oprice">￥99</span><span class="item-salesInfo-discount"><em>3.6</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em></em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('27406792868.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1v9xXGXXXXXaCaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1v9xXGXXXXXaCaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">南极人保暖内衣加绒加厚超柔舒肤绒男士女士秋冬情侣秋衣秋裤套装</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">38.8</span><span class="item-salesInfo-oprice">￥168</span><span class="item-salesInfo-discount"><em>2.3</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>最后6小时</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('25354992789.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1ag1FHXXXXXaEXFXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1ag1FHXXXXXaEXFXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">南极人纯棉男女士秋衣秋裤套装全棉毛衫圆领基础打底薄款保暖内衣</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">128.02</span><span class="item-salesInfo-oprice">￥268</span><span class="item-salesInfo-discount"><em>4.7</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>新年鸿运价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('41760699620.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/T1zUdPFwhbXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/T1zUdPFwhbXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">薇美人正品无钢圈一片式无痕文胸聚拢光面调整型女士内衣胸罩</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">39.8</span><span class="item-salesInfo-oprice">￥128</span><span class="item-salesInfo-discount"><em>3.1</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>聚划箅</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('19407504432.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1RRQ3GVXXXXc1XVXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1RRQ3GVXXXXc1XVXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">红豆全纯棉薄款内衣秋衣秋裤男士女士本命年棉毛衫冬基础保暖套装</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">29.9</span><span class="item-salesInfo-oprice">￥128</span><span class="item-salesInfo-discount"><em>2.3</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>特惠价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('19357351388.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i2/TB1P7O5GXXXXXbpXFXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i2/TB1P7O5GXXXXXbpXFXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">品牌小胸厚女士内衣上薄下厚文胸性感深V超聚拢调整型收副乳胸罩</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">59</span><span class="item-salesInfo-oprice">￥208</span><span class="item-salesInfo-discount"><em>2.8</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>新春大促</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('42622214425.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1r2bZGXXXXXaAXVXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1r2bZGXXXXXaAXVXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">俞兆林 蜂窝式蓄热莫代尔美体套装秋衣秋裤 基础保暖内衣女8002</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">29.9</span><span class="item-salesInfo-oprice">￥137</span><span class="item-salesInfo-discount"><em>2.1</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍29点9</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('19503409858.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB1gg1MGFXXXXcXXFXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB1gg1MGFXXXXcXXFXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">爱悦姿专柜正品 秋冬深V性感内衣 刺绣聚拢调整型文胸女套装T1501</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">99.01</span><span class="item-salesInfo-oprice">￥289</span><span class="item-salesInfo-discount"><em>3.4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>即将涨价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('40655276069.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1XvR3HXXXXXa8XFXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1XvR3HXXXXXa8XFXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">南极人保暖内衣男/女士加厚加绒套装冬秋衣秋裤一体黄金暖甲棉</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">23.8</span><span class="item-salesInfo-oprice">￥98</span><span class="item-salesInfo-discount"><em>2.4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>年终大让利</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+
+					</ul>
+				</div>
+			</div>
+
+			<!---------------宝贝list end--------------->
+
+		</div>
+
+		<!---------------footer start--------------->
+		<div class="container footer bgFFF">
+			<div class="h-container clearfix">
+				<p class="ftlogo">
+					<a href="http://www.chuchujie.com">
+						<img src="http://www.chuchujie.com/images/ftlogo.png" alt="" />
+					</a>
+				</p>
+
+				<div class="ftcontent">
+					<dl class="one">
+						<dt>商家入口</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">商家入驻</a>
+						</dd>
+					</dl>
+					<dl class="one">
+						<dt>关于我们</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">加入我们</a>
+						</dd>
+					</dl>
+					<dl class="one">
+						<dt>友情链接</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">应用宝</a>
+						</dd>
+					</dl>
+					<dl class="one">
+						<dt>关注我们</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">新浪微博</a>
+							<a href="#" target="_blank" rel="nofollow">QQ空间</a>
+						</dd>
+					</dl>
+
+				</div>
+			</div>
+			<div class="footer_copyright">Copyright @ 2011-2013  all Rights Reserved
+				<br/>xxxx
+			</div>
+		</div>
+		<!---------------footer end--------------->
+
+		<!---------------返回顶部 start--------------->
+		<div class="fh_back" id="back_id">
+			<a href="javascript:;" id="fh_back"></a>
+		</div>
+		<!---------------返回顶部 end--------------->
+
+		<div style="display: none">
+			<!--
+            	作者：47614737@qq.com
+            	时间：2015-03-05
+            	描述：统计代码
+ 			<script type="text/javascript">
+				var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cspan id='cnzz_stat_icon_1253318228'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1253318228' type='text/javascript'%3E%3C/script%3E"));
+			</script>           	
+            -->
+
+		</div>
+		<script>
+			var _czc = _czc || [];
+			_czc.push(["_trackPageview", "/首页"]);
+			_czc.push(["_setAutoPageview", false]);
+		</script>
+	</body>
+
+</html>
