@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<meta name="renderer" content="webkit" />
+		<meta name="X-UA-Compatible" content="IE=edge" />
+		<title>9块9包邮购，9块9还包邮</title>
+		<meta name="keywords" content="9块9包邮购,9块9包邮,九块九包邮购,九块九包邮,9块9还包邮,九块九还包邮,每日精选,今日精选,独家折扣,导购,网购,购物,推荐,女装,内衣,文胸,女包,高跟鞋,时尚,精品,团购,特价,森女,小清新,搭配,卖萌,连衣裙,打底裤" />
+		<meta name="description" content="每日精选超值宝贝，低至9块9，6000万人的共同选择！" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/lazyload.js"></script>
+
+		<!-----以下是横幅幻灯片js------->
+		<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+		<script type="text/javascript">
+			function is_mobile() {
+				var regex_match = /(nokia|iphone|android|motorola|^mot-|softbank|foma|docomo|kddi|up.browser|up.link|htc|dopod|blazer|netfront|helio|hosin|huawei|novarra|CoolPad|webos|techfaith|palmsource|blackberry|alcatel|amoi|ktouch|nexian|samsung|^sam-|s[cg]h|^lge|ericsson|philips|sagem|wellcom|bunjalloo|maui|symbian|smartphone|midp|wap|phone|windows ce|iemobile|^spice|^bird|^zte-|longcos|pantech|gionee|^sie-|portalmmm|jigs browser|hiptop|^benq|haier|^lct|operas*mobi|opera*mini|320x320|240x320|176x220)/i;
+				var u = navigator.userAgent;
+				var result = regex_match.exec(u);
+				return !!result;
+			}
+			if (is_mobile()) {
+				
+			}
+			$(document).ready(function() {
+				$(".main_visual").hover(function() {
+					$("#btn_prev,#btn_next").fadeIn()
+				}, function() {
+					$("#btn_prev,#btn_next").fadeOut()
+				})
+				$dragBln = false;
+				$(".main_image").touchSlider({
+					flexible: true,
+					speed: 200,
+					btn_prev: $("#btn_prev"),
+					btn_next: $("#btn_next"),
+					paging: $(".flicking_con a"),
+					counter: function(e) {
+						$(".flicking_con a").removeClass("on").eq(e.current - 1).addClass("on");
+					}
+				});
+				$(".main_image").bind("mousedown", function() {
+					$dragBln = false;
+				})
+				$(".main_image").bind("dragstart", function() {
+					$dragBln = true;
+				})
+				$(".main_image a").click(function() {
+					if ($dragBln) {
+						return false;
+					}
+				})
+				timer = setInterval(function() {
+					$("#btn_next").click();
+				}, 5000);
+				$(".main_visual").hover(function() {
+					clearInterval(timer);
+				}, function() {
+					timer = setInterval(function() {
+						$("#btn_next").click();
+					}, 5000);
+				})
+				$(".main_image").bind("touchstart", function() {
+					clearInterval(timer);
+				}).bind("touchend", function() {
+					timer = setInterval(function() {
+						$("#btn_next").click();
+					}, 5000);
+				})
+			});
+		</script>
+	</head>
+
+	<body>
+
+		<div id="header">
+			<div class="h-container clearfix">
+				<div class="site_logo">
+					<a href="" title="">
+						<img src="images/logo.png" alt="" />
+					</a>
+				</div>
+				<ul class="site_icon">
+					<li class="bg4">9天无理由退货</li>
+					<li class="bg3">小编验货</li>
+					<li class="bg2">闪电发货</li>
+					<li class="bg1">担保交易</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="site_pannel">
+			<div class="nav-container">
+				<ul class="sp-container">
+					<li class="sp-active"><a href="">首页</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!---------------header end--------------->
+
+		<!---------横幅幻灯片 start------------->
+		<div class="container">
+			<div class="main_visual">
+				<div class="flicking_con">
+					<div class="flicking_inner">
+						<a href="javascript:;"></a>
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+				<div class="main_image">
+					<ul>
+						<li>
+							<a href="zdm.html" title="" class="imgtitle" tj-type="轮播图2">
+								<span class="img_1"></span>
+							</a>
+						</li>
+						<li>
+							<a href="brand.html" title="" class="imgtitle" tj-type="轮播图2">
+								<span class="img_2"></span>
+							</a>
+						</li>
+					</ul>
+					<a href="javascript:;" id="btn_prev"></a>
+					<a href="javascript:;" id="btn_next"></a>
+				</div>
+			</div>
+		</div>
+		<!---------横幅幻灯片 start------------->
+
+		<div class="h-container clearfix">
+
+			<div class="mark-site nopd mt35 clearfix">
+				<i class="lock"></i><em class="ftpink">每日精品推荐</em> 今日更新
+			</div>
+
+			<!---------------宝贝list start--------------->
+			<div class="ba-baobei-box mt10 clearfix">
+				<div class="baobei-width clearfix">
+					<ul class="clearfix" id="baobeilist">
+				
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('42246758545.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB1lIovGXXXXXahaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB1lIovGXXXXXahaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">新款男士个性迷彩休闲男包潮包 运动包骑行包斜跨单肩包帆布胸包</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">49</span><span class="item-salesInfo-oprice">￥98</span><span class="item-salesInfo-discount"><em>5</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍下24元</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('39224080346.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i2/TB11VRUHXXXXXc.XXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i2/TB11VRUHXXXXXc.XXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">景德镇陶瓷酒坛 泡酒罐5-10斤装 泡杨梅酒瓶 装酒容器 数量有限</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">19.9</span><span class="item-salesInfo-oprice">￥88</span><span class="item-salesInfo-discount"><em>2.2</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>惊爆价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('40134584110.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1S.9pHXXXXXa6XXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1S.9pHXXXXXa6XXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">春季男装新款 休闲长裤青少年小脚韩版修身卫裤男士大码运动裤子</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">33</span><span class="item-salesInfo-oprice">￥165</span><span class="item-salesInfo-discount"><em>2</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>Duang</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('41469828030.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1EW3lGpXXXXXqXXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1EW3lGpXXXXXqXXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">歌斐颂 进口原料纯可可脂醇黑巧克力320g 黑巧休闲零食食品包邮</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">59</span><span class="item-salesInfo-oprice">￥118</span><span class="item-salesInfo-discount"><em>5</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍下39</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('42991378232.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB11D7XHXXXXXchapXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB11D7XHXXXXXchapXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">云南特产潘祥记玫瑰鲜花饼16个礼盒装400g零食糕点包邮</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">16.5</span><span class="item-salesInfo-oprice">￥48</span><span class="item-salesInfo-discount"><em>3.4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>限时优惠</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('37952843574.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB1nSciGVXXXXXwaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB1nSciGVXXXXXwaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">家兴不锈钢牛奶锅16cm单柄韩式泡面不粘锅电磁炉通用德国迷你锅具</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">39.9</span><span class="item-salesInfo-oprice">￥69.9</span><span class="item-salesInfo-discount"><em>5.7</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍下19元</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('41404431045.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1lYHzGVXXXXXEaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1lYHzGVXXXXXEaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">顺丰包邮AUX/奥克斯 CS2007G 2000w智能防水按键屏电磁炉特价</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">99</span><span class="item-salesInfo-oprice">￥199</span><span class="item-salesInfo-discount"><em>4.9</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>新春大促</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('16823551581.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i2/17106024279387689/T1LcWqXyBaXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i2/17106024279387689/T1LcWqXyBaXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">安曼可移除墙贴纸 客厅卧室走廊腰线贴 买3送1 买5送2</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">4.6</span><span class="item-salesInfo-oprice">￥12.8</span><span class="item-salesInfo-discount"><em>3.6</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>仅限一天</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('12273261390.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1zPNhHXXXXXbsXVXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1zPNhHXXXXXbsXVXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">青青乐福搪瓷奶锅小汤锅电磁炉加厚16cm特价宝宝辅食米糊煮奶锅</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">29.9</span><span class="item-salesInfo-oprice">￥98</span><span class="item-salesInfo-discount"><em>3</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>限时抢购</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('42205180352.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB16h3bGFXXXXXkapXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB16h3bGFXXXXXkapXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">女包新款欧美时尚帆布包简约休闲防水牛津纺包单肩包斜挎手提大包</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">45</span><span class="item-salesInfo-oprice">￥168</span><span class="item-salesInfo-discount"><em>2.6</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>三十九点九</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('38057307761.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1Jv68GFXXXXbKXpXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1Jv68GFXXXXbKXpXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">赛尔玛墙壁式双USB插座 五孔带USB充电插座香槟金色开关面板 正品</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">28</span><span class="item-salesInfo-oprice">￥191</span><span class="item-salesInfo-discount"><em>1.4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>品牌大促</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('17000308357.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB14N2rHXXXXXXFXpXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB14N2rHXXXXXXFXpXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">公狼防潮垫 200X150加厚 户外可折叠坐垫草地垫布 野餐垫</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">49</span><span class="item-salesInfo-oprice">￥118</span><span class="item-salesInfo-discount"><em>4.1</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍下26元</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('43386847888.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i4/TB1uLX4HXXXXXcIXpXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i4/TB1uLX4HXXXXXcIXpXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">奥宇工具钢锯架 铝合金钢锯弓手工锯子 迷你钢锯</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">9.9</span><span class="item-salesInfo-oprice">￥14.14</span><span class="item-salesInfo-discount"><em>7</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍下九块九</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('40573407013.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i2/TB1n.ZZHXXXXXXGaFXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i2/TB1n.ZZHXXXXXXGaFXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">ORCES2014秋款新品真皮女鞋正装OL欧美尖头高跟鞋英伦细跟单鞋子</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">299.06</span><span class="item-salesInfo-oprice">￥799</span><span class="item-salesInfo-discount"><em>3.7</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍下69</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('43636526071.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1iu6bHXXXXXXnXFXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1iu6bHXXXXXXnXFXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">飞莱依2015春装新款毛衣打底衫圆领灯笼长袖镂空套头针织衫 女 薄</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">39.9</span><span class="item-salesInfo-oprice">￥115</span><span class="item-salesInfo-discount"><em>3.4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>今日特价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('43367982693.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1SJRVHXXXXXalXXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1SJRVHXXXXXalXXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">全10册海底两万里 6-7-8-9-10岁注音彩图版课外读物 1-2-3小学生一二三年级课外书假如给我三天光明木偶奇遇记爱的教育昆虫记 包邮</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">55.8</span><span class="item-salesInfo-oprice">￥138</span><span class="item-salesInfo-discount"><em>4</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍下42元</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('43329091128.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1bKVjHXXXXXchXXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1bKVjHXXXXXchXXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">汽车雨伞收纳盒车载垃圾桶车内置物袋储物箱 汽车用品超市收纳箱</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">6.8</span><span class="item-salesInfo-oprice">￥18</span><span class="item-salesInfo-discount"><em>3.7</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>买2更美观</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('20265765947.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i3/TB1afsWGVXXXXcVaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i3/TB1afsWGVXXXXcVaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">金巴克骑行头盔山地车头盔公路自行车安全帽子超轻男女骑行装备</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">39.01</span><span class="item-salesInfo-oprice">￥256</span><span class="item-salesInfo-discount"><em>1.5</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>体验价</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('39350171200.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i1/TB1q1VGHXXXXXXhaXXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i1/TB1q1VGHXXXXXXhaXXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">买5送1闽族红红曲黄酒农客家自酿糯米老黄酒 月子米酒水娘酒包邮</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">19.8</span><span class="item-salesInfo-oprice">￥59</span><span class="item-salesInfo-discount"><em>3.3</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>拍15块8</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+						<li class="baobei-item">
+							<a href="javascript:;" onclick="baobeiClick('41286264963.html')">
+								<div class="item-img">
+									<img style="display: inline;" class="lazyload" src="http://img4.tbcdn.cn/tfscom/i2/TB1KMr0GXXXXXbnXVXXXXXXXXXX_!!0-item_pic.jpg" data-original="http://img4.tbcdn.cn/tfscom/i2/TB1KMr0GXXXXXbnXVXXXXXXXXXX_!!0-item_pic.jpg">
+								</div>
+								<div class="item-content ftstyle">
+									<h3 class="item-title">双枒子黑木耳东北野生特产级 无根肉厚秋木耳小碗耳100g袋装干货</h3>
+									<p class="item-salesInfo clearfix"><i class="item-salesInfo-icon">￥</i><span class="item-salesInfo-price">9.9</span><span class="item-salesInfo-oprice">￥19.8</span><span class="item-salesInfo-discount"><em>5</em>折</span>
+									</p>
+									<p class="item-salesother clearfix"><span><em>约惠春天</em></span>
+									</p>
+								</div>
+							</a>
+						</li>
+						
+				
+
+
+					</ul>
+				</div>
+			</div>
+
+			<!---------------宝贝list end--------------->
+
+		</div>
+<div class="page">
+				<div><a class="pg-prev" href="">上一页</a>&nbsp;<a class="pg-next" href="/jujia?page=2">下一页</a>
+				</div>
+			</div>
+		<!---------------footer start--------------->
+		<div class="container footer bgFFF">
+			<div class="h-container clearfix">
+				<p class="ftlogo">
+					<a href="http://www.chuchujie.com">
+						<img src="images/ftlogo.png" alt="" />
+					</a>
+				</p>
+
+				<div class="ftcontent">
+					<dl class="one">
+						<dt>商家入口</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">商家入驻</a>
+						</dd>
+					</dl>
+					<dl class="one">
+						<dt>关于我们</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">加入我们</a>
+						</dd>
+					</dl>
+					<dl class="one">
+						<dt>友情链接</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">应用宝</a>
+						</dd>
+					</dl>
+					<dl class="one">
+						<dt>关注我们</dt>
+						<dd>
+							<a href="#" target="_blank" rel="nofollow">新浪微博</a>
+							<a href="#" target="_blank" rel="nofollow">QQ空间</a>
+						</dd>
+					</dl>
+
+				</div>
+			</div>
+			<div class="footer_copyright">Copyright @ 2011-2013  all Rights Reserved
+				<br/>xxxx
+			</div>
+		</div>
+		<!---------------footer end--------------->
+
+		<!---------------返回顶部 start--------------->
+		<div class="fh_back" id="back_id">
+			<a href="javascript:;" id="fh_back"></a>
+		</div>
+		<!---------------返回顶部 end--------------->
+
+		<div style="display: none">
+			<!--
+            	作者：47614737@qq.com
+            	时间：2015-03-05
+            	描述：统计代码
+ 			<script type="text/javascript">
+				var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+				document.write(unescape("%3Cspan id='cnzz_stat_icon_1253318228'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1253318228' type='text/javascript'%3E%3C/script%3E"));
+			</script>           	
+            -->
+
+		</div>
+		<script>
+			var _czc = _czc || [];
+			_czc.push(["_trackPageview", "/首页"]);
+			_czc.push(["_setAutoPageview", false]);
+		</script>
+	</body>
+
+</html>
